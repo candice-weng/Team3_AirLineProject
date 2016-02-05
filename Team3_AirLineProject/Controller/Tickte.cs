@@ -12,22 +12,13 @@ namespace Controller
     using System;
     using System.Collections.Generic;
     
-    public partial class Booking
+    public partial class Tickte
     {
-        public Booking()
-        {
-            this.Ticktes = new HashSet<Tickte>();
-        }
-    
+        public int idTicket { get; set; }
         public int idBooking { get; set; }
-        public int idDeparture { get; set; }
-        public string idUser { get; set; }
-        public System.DateTime bookingDate { get; set; }
-        public string bookingStatus { get; set; }
-        public decimal totalPrice { get; set; }
+        public string passportNo { get; set; }
+        public decimal ticketPrice { get; set; }
     
-        public virtual Departure Departure { get; set; }
-        public virtual User User { get; set; }
-        public virtual ICollection<Tickte> Ticktes { get; set; }
+        public virtual Booking Booking { get; set; }
     }
 }

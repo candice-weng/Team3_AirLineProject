@@ -30,6 +30,7 @@ namespace Controller
         public virtual DbSet<Flight> Flights { get; set; }
         public virtual DbSet<Passenger> Passengers { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
+        public virtual DbSet<Tickte> Ticktes { get; set; }
         public virtual DbSet<User> Users { get; set; }
     }
 }
