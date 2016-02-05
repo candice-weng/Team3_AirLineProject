@@ -8,9 +8,9 @@
             <asp:TextBox runat="server" ID="txtUser" placeholder="Enter your UserID"></asp:TextBox>
             <asp:TextBox runat="server" TextMode="Password" ID="txtPassword" placeholder="Enter your Password"></asp:TextBox>
             <asp:Button runat="server" ID="btnlogin" text="login" OnClick="btnlogin_Click" />
-        
+            <asp:Label runat="server" ID="txtMessage"></asp:Label>
         <div class="login-help">
-            <a href="#">Register</a> • <a href="#">Forgot Password</a>
+            <a href="Register.aspx">Register</a> • <a href="#">Forgot Password</a>
         </div>
     </div>
 </asp:Content>
